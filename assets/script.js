@@ -17,3 +17,26 @@ $(document).ready(function () {
         }, 4000);
 })
 });
+
+function hourBlockUpdate() {
+    // gets the current number hour of the day in military time
+    var currentHour = moment().hours();
+    // loop over all the time-block divs
+    $('.time-block').each(function () {
+        var blockHour = parseInt($(this).attr('id').split('-')[1]);
+
+        // check if we have time has passed current hour
+        if(blockHour < currentHour) {
+            $(this).addClass('past');
+        } else if (blockHour === currentHour) {
+            $(this).removeClass('past');
+            $(this).addClass('present');
+        } else {
+            $(this).removeClass('past');
+            $(this).removeClass('present');
+            $(this).addClass('future');
+        }
+    });
+};
+
+hourBlockUpdate();
