@@ -40,3 +40,7 @@ function hourBlockUpdate() {
 };
 
 hourBlockUpdate();
+
+// checks the current time
+var interval = setInterval(hourBlockUpdate, 150000);
+
