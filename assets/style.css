@@ -1,7 +1,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  line-height: 1;
+  line-height: 1; 
+  /* box-sizing: border-box; */
 }
 
 textarea {
@@ -15,10 +16,20 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
-  color: black;
+  background-color: #eeeeee;
+  color: #53565a;
   border-radius: 0;
-  border-bottom: 10px solid black;
+}
+
+.notification {
+  display: none;
+  margin: 40px 0;
+  color: #06aed5;
+  font-weight: bold;
+}
+
+.show {
+  display: initial;
 }
 
 .description {
@@ -28,6 +39,8 @@ textarea {
 .time-block {
   text-align: center;
   border-radius: 15px;
+  
+
 }
 
 .row {
@@ -40,6 +53,8 @@ textarea {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  margin: 0 auto;
+  padding-top: 30px;
 }
 
 .past {
