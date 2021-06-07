@@ -7,5 +7,5 @@ The hour blocks will turn gray when that time has passed. The current hour block
 The link to the live page: https://af-cmdz.github.io/work-day-scheduler/
 
 Screen shot of finished page:
-![Work Day Scheduler Page](images/screen-shot.png "work day scheduler")
+![Work Day Scheduler Page](images/screen-shot-2.png "work day scheduler")
 
