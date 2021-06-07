@@ -1,36 +1,63 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1; 
-  /* box-sizing: border-box; */
+:root {
+  --lime: #b0e600;
+  --navy: #134e6f;
+  --watermelon: #FF7566;
+  --ocean: #15999E;
+  --aqua: #72dce0;
+  --fog: #dee0e6;
+  --cement: #c5c8d3;
+
 }
 
-textarea {
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
+body {
+  font-family: 'Poppins', 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1; 
+  
 }
+
+/* Header */
 
 .jumbotron {
   text-align: center;
-  background-color: #eeeeee;
-  color: #53565a;
+  background-color: var(--aqua);
+  color: var(--navy);
   border-radius: 0;
+  font-family: 'Poppins', 'Open Sans', Arial, Helvetica, sans-serif;
 }
+
+.display-3 {
+  font-weight: 600;
+  color: white;
+  font-size: 5rem;
+
+}
+
+.lead {
+  font-weight: 300;
+  margin-top: 1.5rem;
+}
+
+#currentDay {
+  font-weight: 600;
+  margin-top: 2.5rem;
+  font-size: 2rem;
+}
+
+/* saved notification */
 
 .notification {
   display: none;
   margin: 40px 0;
-  color: #06aed5;
-  font-weight: bold;
+  color: var(--ocean);
+  font-weight: 500;
 }
 
-.show {
+.isVisible {
   display: initial;
 }
+
+/* Schedule table */
 
 .description {
   white-space: pre-wrap;
@@ -39,8 +66,6 @@ textarea {
 .time-block {
   text-align: center;
   border-radius: 15px;
-  
-
 }
 
 .row {
@@ -51,36 +76,50 @@ textarea {
 
 .hour {
   background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  color: var(--navy);
+  border-top: 1px solid var(--fog);
   margin: 0 auto;
   padding-top: 30px;
 }
 
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: var(--navy);
+  border-left: 1px solid white;
+  padding: 10px;
+}
+
+/* Time Block Coloring */
+
 .past {
-  background-color: #d3d3d3;
+  background-color: var(--fog);
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: var(--watermelon);
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: var(--lime);
   color: white;
 }
+
+/* Button */
 
 .saveBtn {
-  border-left: 1px solid black;
+  border-left: 1px solid white;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: var(--ocean);
   color: white;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
+.saveBtn:hover {
+  color: var(--lime);
 }
+
+
